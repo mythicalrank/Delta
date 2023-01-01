@@ -11,7 +11,5 @@ _G.Games = {
 for i,v in pairs(_G.Games) do
     if v == game.PlaceId then
         loadstring(game:HttpGet(i))()
-    else
-        game:Shutdown()
     end
 end
