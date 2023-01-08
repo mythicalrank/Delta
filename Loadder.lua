@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mythicalrank/Delta/main/Protected%20(4).lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mythicalrank/Delta/main/Loading%20Gui.lua"))()
 
 _G.Games = {
     ['https://scripts.luawl.com/14696/8739839954.lua'] = 8739839954, -- Jujutsu Tycoon
