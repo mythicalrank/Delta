@@ -3,6 +3,7 @@ _G.AutoGen = true
 _G.Settings = {
     ["Password lenght"] = 15,
     ["Username lenght"] = 7,
+    ["Save to folder"] = true,
 }
 ]]
 
@@ -37,6 +38,13 @@ if not _G.Execute then
                 --Copy
                 setclipboard("\n\nUsername : "..user.."\nPassword : "..password)
                 print("\n\nUsername : "..user.."\nPassword : "..password)
+                if _G.Settings["Save to folder"] then
+                    if isfolder("Delta Hub Gen") then
+                        writefile("Delta Hub Gen/"..user..".txt","\n\nUsername : "..user.."\nPassword : "..password)
+                    else
+                        makefolder("Delta Hub Gen")
+                    end
+                end
             end
         end)
     end
